@@ -1,0 +1,34 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #DD5353;
+}
+
+a {
+  color: black;
+}
+
+.title {
+  background-color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  height: 70px;
+}
+
+.nav {
+  height: 744px;
+  padding-left: 20px;
+}
