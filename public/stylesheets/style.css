@@ -14,7 +14,7 @@ a {
 }
 
 body {
-  background-color: #DD5353;
+  background-color: #ffd900;
 }
 
 a {
@@ -23,12 +23,85 @@ a {
 
 .title {
   background-color: white;
-  padding-left: 60px;
-  padding-right: 60px;
-  height: 70px;
+  padding-left: 580px;
+  padding-right: 120px;
+  margin: 0;
+  height: 60px;
 }
 
 .nav {
-  height: 744px;
+  height: 660px;
   padding-left: 20px;
+  float: left;
+}
+
+.para {
+  float: right;
+}
+
+.padding {
+  padding-left: 300px;
+}
+
+.paddings {
+  padding-left: 320px;
+}
+
+.tag {
+  padding-left: 300px;
+  background-color: white;
+  margin: 0;
+}
+
+/*book lists */
+.head {
+  padding-left: 600px;
+  background-color: white;
+  height: 60px;
+}
+
+.tit {
+  padding-top: 20px;
+}
+
+.bot {
+   padding-right: 950px;
+   padding-top: 20px;
+}
+
+/* book_details page */
+.cont{
+  padding-right: 690px;
+  padding-top: 20px;
+}
+
+.details {
+  height: 60px;
+  background-color: white;
+  padding-left: 600px;
+}
+
+/* author lists */
+.autlists {
+  padding-right: 790px;
+  padding-top: 20px;
+}
+
+/*for book instances */
+.instance {
+  padding-right: 790px;
+  padding-top: 20px;
+}
+
+
+/* for artists */
+.conts{
+  padding-right: 790px;
+  padding-top: 20px;
+}
+
+/* for genre details */
+.genre {
+  padding-right: 650px;
+  padding-top: 20px;
 }

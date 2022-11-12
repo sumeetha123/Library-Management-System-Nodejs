@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  h1= title
+  div(class="head")
+    h1= title
 
-  ul
+  p(class= "tag") Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
+  
+
+  ul(class="para bot")
     - book_list.sort(function(a,b) {let textA = a.title.toUpperCase(); let textB = b.title.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1: 0;  });
     each book in book_list
       li

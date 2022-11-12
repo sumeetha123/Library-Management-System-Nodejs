@@ -1,26 +1,31 @@
 extends layout
 
 block content
+  div(class="details")
+    h1 Book Instance Details
 
-  h1 ID: #{bookinstance._id}
+  p(class= "tag") Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
 
-  p #[strong Title:]
-    a(href=bookinstance.book.url) #{bookinstance.book.title}
-  p #[strong Imprint:] #{bookinstance.imprint}
+  div(class="para genre")
+    h1 ID: #{bookinstance._id}
 
-  p #[strong Status:]
-    if bookinstance.status=='Available'
-      span.text-success #{bookinstance.status}
-    else if bookinstance.status=='Maintenance'
-      span.text-danger #{bookinstance.status}
-    else
-      span.text-warning #{bookinstance.status}
+    p #[strong Title:]
+      a(href=bookinstance.book.url) #{bookinstance.book.title}
+    p #[strong Imprint:] #{bookinstance.imprint}
 
-  if bookinstance.status!='Available'
-    p #[strong Due back:] #{bookinstance.due_back_formatted}
+    p #[strong Status:]
+      if bookinstance.status=='Available'
+        span.text-success #{bookinstance.status}
+      else if bookinstance.status=='Maintenance'
+        span.text-danger #{bookinstance.status}
+      else
+        span.text-warning #{bookinstance.status}
 
-  hr
-  p
-    a(href=bookinstance.url+'/delete') Delete Book Instance
-  p
-    a(href=bookinstance.url+'/update') Update Book Instance
+    if bookinstance.status!='Available'
+      p #[strong Due back:] #{bookinstance.due_back_formatted}
+
+    hr
+    p
+      a(href=bookinstance.url+'/delete') Delete Book Instance
+    p
+      a(href=bookinstance.url+'/update') Update Book Instance

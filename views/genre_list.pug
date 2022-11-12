@@ -1,9 +1,13 @@
 extends layout
 
 block content
-  h1= title
+  div(class="head")
+    h1= title
 
-  ul
+  p(class= "tag") Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
+  
+
+  ul(class="para bot")
     each genre in genre_list
       li
         a(href=genre.url) #{genre.name}

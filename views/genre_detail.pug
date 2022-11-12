@@ -1,24 +1,29 @@
 extends layout
 
 block content
+  div(class="details")
+    h1 Genre details
 
-  h1 Genre: #{genre.name}
+  p(class= "tag") Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
+  
+  div(class="para genre")
+    h1 Genre: #{genre.name}
 
-  div(style='margin-left:20px;margin-top:20px')
+    div(style='margin-left:20px;margin-top:20px')
 
-    h4 Books
+      h4 Books
 
-    d1
-      each book in genre_books
-        dt
-          a(href=book.url) #{book.title}
-        dd #{book.summary}
+      d1
+        each book in genre_books
+          dt
+            a(href=book.url) #{book.title}
+          dd #{book.summary}
 
-      else
-        p This genre has no books
+        else
+          p This genre has no books
 
-    hr
-    p
-      a(href=genre.url+'/delete') Delete genre
-    p
-      a(href=genre.url+'/update') Update genre
+      hr
+      p
+        a(href=genre.url+'/delete') Delete genre
+      p
+        a(href=genre.url+'/update') Update genre
