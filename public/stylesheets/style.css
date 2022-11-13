@@ -130,3 +130,17 @@ a {
   padding-top: 100px;
   padding-right: 550px;
 }
+
+/* delete forms */
+.delete {
+  float: right;
+  padding-top: 60px;
+}
+
+.distance {
+  padding-right: 520px
+}
+
+.dist {
+  padding-right: 200px;
+}

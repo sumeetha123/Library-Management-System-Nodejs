@@ -1,27 +1,32 @@
 extends layout
 
-block content
-  h1 #{title}: #{genre.name}
+block content 
+  div(class="head")
+    h1 Delete genre
 
-  if genres_books.length
+  p(class= "tag") Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
 
-    p #[strong Delete the following books before attempting to delete this genre.]
+  div(class="delete distance")
+    h1 #{title}: #{genre.name}
+    if genres_books.length
 
-    div(style='margin-left:20px;margin-top:20px')
+      p #[strong Delete the following books before attempting to delete this genre.]
 
-      h4 Books
+      div(style='margin-left:20px;margin-top:20px')
 
-      dl
-      each book in genres_books
-        dt
-          a(href=book.url) #{book.title}
-        dd #{book.summary}
+        h4 Books
 
-  else
-    p Do you really want to delete this Genre?
+        dl
+        each book in genres_books
+          dt
+            a(href=book.url) #{book.title}
+          dd #{book.summary}
 
-    form(method='POST' action='')
-      div.form-group
-        input#genreid.form-control(type='hidden', name='genreid', required='true', value=genre._id)
+    else
+      p Do you really want to delete this Genre?
 
-      button.btn.btn-primary(type='submit') Delete
+      form(method='POST' action='')
+        div.form-group
+          input#genreid.form-control(type='hidden', name='genreid', required='true', value=genre._id)
+
+        button.btn.btn-primary(type='submit') Delete

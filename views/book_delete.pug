@@ -1,27 +1,31 @@
 extends layout
 
 block content
-  h1 #{title} #{book.name}
+  div(class="head")
+    h1 #{title} #{book.name}
 
-  if books_bookinstances.length
+  p(class= "tag") Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
 
-    p #[strong Delete the following book instances before attempting to delete this book.]
+  div(class="delete distance")
+    if books_bookinstances.length
 
-    div(style='margin-left:20px;margin-top:20px')
+      p #[strong Delete the following book instances before attempting to delete this book.]
 
-      h4 Book Instances
+      div(style='margin-left:20px;margin-top:20px')
 
-      dl
-      each bookInstance in books_bookinstances
-        dt
-          a(href=bookInstance.url) #{bookInstance.book}
-        dd #{bookInstance.imprint} -- #{bookInstance.status}
+        h4 Book Instances
 
-  else
-    p Do you really want to delete this Book?
+        dl
+        each bookInstance in books_bookinstances
+          dt
+            a(href=bookInstance.url) #{bookInstance.book}
+          dd #{bookInstance.imprint} -- #{bookInstance.status}
 
-    form(method='POST' action='')
-      div.form-group
-        input#bookid.form-control(type='hidden', name='bookid', required='true', value=book._id)
+    else
+      p Do you really want to delete this Book?
 
-      button.btn.btn-primary(type='submit') Delete
+      form(method='POST' action='')
+        div.form-group
+          input#bookid.form-control(type='hidden', name='bookid', required='true', value=book._id)
+
+        button.btn.btn-primary(type='submit') Delete
