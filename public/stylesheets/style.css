@@ -83,7 +83,7 @@ a {
 
 /* author lists */
 .autlists {
-  padding-right: 790px;
+  padding-right: 790px; 
   padding-top: 20px;
 }
 
@@ -104,4 +104,29 @@ a {
 .genre {
   padding-right: 650px;
   padding-top: 20px;
+}
+
+/* for forms */
+.form {
+  float: right;
+  padding-top: 50px;
+  padding-right: 350px;
+}
+
+.formsauth {
+  float: right;
+  padding-top: 100px;
+  padding-right: 550px;
+}
+
+.formsgen {
+  float: right;
+  padding-top: 100px;
+  padding-right: 550px;
+}
+
+.formbookin {
+  float: right;
+  padding-top: 100px;
+  padding-right: 550px;
 }
