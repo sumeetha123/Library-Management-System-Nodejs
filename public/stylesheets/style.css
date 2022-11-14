@@ -14,33 +14,96 @@ a {
 }
 
 body {
-  background-color: #ffd900;
+  background-color: #cee5d0;
 }
 
 a {
   color: black;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: black; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
+.gap {
+  padding-left: 30px;
+
+}
+
+.moregap {
+  padding-left: 60px;
+  padding-top: 8px;
+}
+
+.morgap {
+    padding-left: 80px;
+    padding-top: 4px;
+
+}
+
+.hrtag {
+  color: solid white;
+}
+
+li {
+  padding: none;
+  
+}
+
+li:hover {
+  background-color: #cee5d0;
+}
+
+
+
+.boder {
+  border-radius: 1px;
+  border-style: solid;
+  border-color: #cee5d0;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
 }
 
 .title {
-  background-color: white;
-  padding-left: 580px;
+  background-color: #94B49F;
+  padding-left: 560px;
   padding-right: 120px;
   margin: 0;
   height: 60px;
+  font-family: cursive;
+  
 }
 
 .nav {
-  height: 660px;
-  padding-left: 20px;
+  height: 650px;
   float: left;
+  background-color: #94B49F;
+  border-bottom: 20px;
+  border-color:black;
+  padding-left: 25px;
+  margin: 0;
 }
 
 .para {
   float: right;
 }
 
+.bottom {
+  display: flex;
+  align-content:flex-end;
+  
+}
+
 .padding {
   padding-left: 300px;
+  font-family: cursive;
+  padding-top: 20px;
 }
 
 .paddings {
@@ -48,9 +111,11 @@ a {
 }
 
 .tag {
-  padding-left: 300px;
-  background-color: white;
+  padding-left: 450px;
+  background-color: #94B49F;
   margin: 0;
+  padding-bottom: 10px;
+
 }
 
 /*book lists */

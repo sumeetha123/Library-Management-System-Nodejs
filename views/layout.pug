@@ -15,29 +15,39 @@ html(lang='en')
           block content
 
       div
-        div(class='col-sm-2 nav bg-white')
+        div(class='col-sm-2 nav')
           block sidebar
             ul(class='sidebar-nav')
               li
-                a(href='/catalog') Home
-              li
-                a(href='/catalog/books') All books
-              li
-                a(href='/catalog/authors') All authors
-              li
-                a(href='/catalog/genres') All genres
-              li
-                a(href='/catalog/bookinstances') All book-instances
-              li
+                a(href='/catalog')(class="morgap") Home
                 hr
               li
-                a(href='/catalog/author/create') Create new author
+                a(href='/catalog/books')(class="moregap") All books
+                hr
               li
-                a(href='/catalog/genre/create') Create new genre
+                a(href='/catalog/authors')(class="moregap") All authors
+                hr
               li
-                a(href='/catalog/book/create') Create new book
+                a(href='/catalog/genres')(class="moregap") All genres
+                hr
+              li
+                a(href='/catalog/bookinstances')(class="gap") All book-instances
+                
+              li(class="hrtag")
+                hr
+
+              li
+                a(href='/catalog/author/create')(class="gap") Create new author
+                hr
+              li
+                a(href='/catalog/genre/create')(class="gap") Create new genre
+                hr
+              li
+                a(href='/catalog/book/create')(class="gap") Create new book
+                hr
               li
                 a(href='/catalog/bookinstance/create') Create new book instance (copy)
+                hr
 
         div
           block body
