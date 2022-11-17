@@ -120,9 +120,10 @@ li:hover {
 
 /*book lists */
 .head {
-  padding-left: 600px;
-  background-color: white;
+  padding-left: 690px;
+  background-color: #94B49F;
   height: 60px;
+  font-family: cursive;
 }
 
 .tit {
@@ -142,7 +143,7 @@ li:hover {
 
 .details {
   height: 60px;
-  background-color: white;
+  background-color: #94B49F;
   padding-left: 600px;
 }
 
@@ -154,7 +155,7 @@ li:hover {
 
 /*for book instances */
 .instance {
-  padding-right: 790px;
+  padding-right: 710px;
   padding-top: 20px;
 }
 
